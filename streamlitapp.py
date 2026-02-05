@@ -53,7 +53,7 @@ if st.button("🔍 Predict Category"):
 
         if hasattr(model, "predict_proba"):
             confidence = model.predict_proba([news_text]).max()
-            st.info(f"📊 Confidence: **{confidence:.2%}**")
+            # st.info(f"📊 Confidence: **{confidence:.2%}**")
             st.caption("Calculated as the highest probability from the model's `predict_proba` output.")
 
 # spell-checker: enable
